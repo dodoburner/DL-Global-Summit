@@ -6,10 +6,40 @@
 header {
   background-color: #f4f4f4;
   padding: 16px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 header img {
   width: 40px;
+  cursor: pointer;
+}
+
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding-top: 40px;
+  padding-left: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  color: #EC5242;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+#mobile-menu li {
+  margin-bottom: 10px;
+}
+
+#mobile-menu i {
+  float: right;
+  margin-right: 30px;
   cursor: pointer;
 }
 
@@ -260,6 +290,13 @@ h5 {
   margin: 0;
 }
 
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 button {
   font-family: "Lato", sans-serif;
 }
@@ -268,5 +305,10 @@ body {
   font-family: "Lato", sans-serif;
   color: #272A31;
   margin: 0;
+  padding-top: 75px;
+}
+
+.display-none {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

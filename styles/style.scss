@@ -12,6 +12,13 @@ h5 {
   margin: 0;
 }
 
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 button {
   font-family: $lato;
 
@@ -21,4 +28,9 @@ body {
   font-family: $lato;
   color: $black;
   margin: 0;
+  padding-top: 75px;
 }  
+
+.display-none {
+  display: none;
+}
