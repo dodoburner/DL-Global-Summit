@@ -1,5 +1,6 @@
 @import 'header-headline';
 @import 'variables';
+@import 'program';
 
 p,
 h1,
@@ -12,4 +13,5 @@ h4 {
 body {
   font-family: $lato;
   color: $black;
+  margin: 0;
 }  
