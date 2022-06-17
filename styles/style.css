@@ -61,7 +61,7 @@ header img {
 
 #program-section {
   background-color: #272A31;
-  padding: 40px 10px;
+  padding: 40px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,6 +88,8 @@ header img {
 #program-section h3 hr {
   width: 50px;
   border-color: #EC5242;
+  border-top: none;
+  border-width: 2px;
 }
 
 #program-section button {
@@ -95,7 +97,7 @@ header img {
   color: white;
   font-family: "Lato", sans-serif;
   font-size: 20px;
-  padding: 35px 50px;
+  padding: 30px 50px;
   margin-top: 40px;
   cursor: pointer;
 }
@@ -144,11 +146,92 @@ header img {
   line-height: 24px;
 }
 
+@font-face {
+  font-family: 'Cocogoose';
+  src: url(/cocogoose/Cocogoose_trial.otf) format("truetype");
+}
+
+#speakers-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 20px 30px 40px;
+}
+
+#speakers-section h3 {
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+#speakers-section h3 hr {
+  width: 50px;
+  border-top: none;
+  border-width: 2px;
+  border-color: #EC5242;
+}
+
+.speaker-container {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+}
+
+.speaker-container .checkboard {
+  width: 75px;
+  position: absolute;
+  top: -18px;
+  left: -20px;
+  z-index: -100;
+}
+
+.speaker-container .speaker-img {
+  width: 125px;
+  height: 125px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.speaker-container .name {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.speaker-container .role {
+  color: #EC5242;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.speaker-container hr {
+  width: 30px;
+  border-color: #D3D3D3;
+  margin: 8px 0px;
+}
+
+.speaker-container .description {
+  line-height: 22px;
+}
+
 p,
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   margin: 0;
 }
 

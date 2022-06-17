@@ -2,7 +2,7 @@
 
 #program-section {
   background-color: $black;
-  padding: 40px 10px;
+  padding: 40px 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,6 +18,8 @@
     hr {
       width: 50px;
       border-color: $red;
+       border-top: none;
+       border-width: 2px;
     }
   }
 
@@ -26,7 +28,7 @@
     color: white;
     font-family: $lato;
     font-size: 20px;
-    padding: 35px 50px;
+    padding: 30px 50px;
     margin-top: 40px;
     cursor: pointer;
   }
