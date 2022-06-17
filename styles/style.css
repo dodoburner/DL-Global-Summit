@@ -1,4 +1,10 @@
+@font-face {
+  font-family: 'Cocogoose';
+  src: url(/cocogoose/Cocogoose_trial.otf) format("truetype");
+}
+
 header {
+  background-color: #f4f4f4;
   padding: 16px 30px;
 }
 
@@ -6,8 +12,58 @@ header img {
   width: 40px;
 }
 
+#headline-section {
+  background-color: #f4f4f4;
+  padding: 40px 20px 100px 20px;
+}
+
+#headline-section .p1 {
+  color: #EC5242;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#headline-section h1 {
+  color: #EC5242;
+  font-family: "Cocogoose", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+
+#headline-section .p2-container {
+  font-weight: 600;
+  line-height: 24px;
+  border: 4px solid white;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+#headline-section .p3 {
+  font-family: "Cocogoose", sans-serif;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+#headline-section .p4 {
+  font-size: 18px;
+}
+
 @font-face {
   font-family: 'Cocogoose';
-  src: url(/cocogoose/Cocogoose-Pro-trial.ttf) format("truetype");
+  src: url(/cocogoose/Cocogoose_trial.otf) format("truetype");
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #272A31;
 }
 /*# sourceMappingURL=style.css.map */

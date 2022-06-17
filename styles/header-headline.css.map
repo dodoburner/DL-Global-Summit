@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,MAAM,CAAC;EACL,OAAO,EAAE,SAAS;CAInB;;AALD,AAEE,MAFI,CAEJ,GAAG,CAAC;EACF,KAAK,EAAE,IAAI;CACZ;;AAGH,AAAA,SAAS,CAAC;EACR,gBAAgB,ECRX,OAAO;CDSb",
+    "sources": [
+        "header-headline.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "header-headline.css"
+}

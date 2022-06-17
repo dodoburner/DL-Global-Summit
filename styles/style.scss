@@ -1,16 +1,15 @@
-@import 'header';
+@import 'header-headline';
+@import 'variables';
 
-@font-face {
-  font-family: 'Cocogoose';
-  src: url(/cocogoose/Cocogoose-Pro-trial.ttf) format('truetype');
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
 }
 
-$black: #272A31;
-$red: #EC5242;
-$gray: #D3D3D3;
-$coco: 'Cocogoose', sans-serif;
-$lato: 'Lato', sans-serif;
-
 body {
-  
+  font-family: $lato;
+  color: $black;
 }  

@@ -1,0 +1,47 @@
+@import 'variables';
+
+header { 
+  background-color: rgb(244, 244, 244);
+  padding: 16px 30px;
+
+  img {
+    width: 40px;
+  }
+}
+
+#headline-section {
+  background-color: rgb(244, 244, 244);
+  padding: 40px 20px 100px 20px;
+  
+  .p1 {
+    color: $red;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    color: $red;
+    font-family: $coco;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+
+  .p2-container {
+    font-weight: 600;
+    line-height: 24px;
+    border: 4px solid white;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .p3 {
+    font-family: $coco;
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .p4 {
+    font-size: 18px;
+  }
+}
