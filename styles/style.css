@@ -191,6 +191,7 @@ header img {
   display: -ms-flexbox;
   display: flex;
   gap: 5%;
+  margin-bottom: 50px;
 }
 
 .speaker-container .checkboard {
