@@ -12,6 +12,11 @@ h5 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 ul,
 li {
   list-style: none;
@@ -33,4 +38,10 @@ body {
 
 .display-none {
   display: none;
+}
+
+.no-scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
