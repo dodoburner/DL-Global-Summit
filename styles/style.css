@@ -79,10 +79,10 @@ header img {
 
 #program-section h3 {
   color: white;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
 }
 
 #program-section h3 hr {
@@ -97,9 +97,10 @@ header img {
   color: white;
   font-family: "Lato", sans-serif;
   font-size: 20px;
-  padding: 30px 50px;
+  padding: 30px 40px;
   margin-top: 40px;
   cursor: pointer;
+  border: none;
 }
 
 #programs-container {
@@ -117,7 +118,10 @@ header img {
   display: grid;
   -ms-grid-columns: 40% 60%;
       grid-template-columns: 40% 60%;
-  padding: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 20px;
 }
 
 #programs-container .program-container div {
@@ -130,18 +134,19 @@ header img {
 }
 
 #programs-container .program-container div i {
-  font-size: 40px;
-  margin-right: 10px;
+  font-size: 34px;
+  margin-right: 12px;
   color: white;
 }
 
 #programs-container .program-container div p {
   color: #EC5242;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 
 #programs-container .program-container p {
+  font-size: 14px;
   color: white;
   line-height: 24px;
 }
@@ -165,7 +170,7 @@ header img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px 20px 30px 40px;
+  padding: 30px 20px 30px 30px;
 }
 
 #speakers-section h3 {
@@ -189,10 +194,10 @@ header img {
 }
 
 .speaker-container .checkboard {
-  width: 75px;
+  width: 60px;
   position: absolute;
-  top: -18px;
-  left: -20px;
+  top: -15px;
+  left: -16px;
   z-index: -100;
 }
 
@@ -206,14 +211,14 @@ header img {
 }
 
 .speaker-container .name {
-  font-size: 22px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 8px;
 }
 
 .speaker-container .role {
   color: #EC5242;
   font-style: italic;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .speaker-container hr {
@@ -223,7 +228,9 @@ header img {
 }
 
 .speaker-container .description {
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
 }
 
 p,

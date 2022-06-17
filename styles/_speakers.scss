@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px 20px 30px 40px;
+  padding: 30px 20px 30px 30px;
 
   h3 {
     font-size: 22px;
@@ -26,10 +26,10 @@
   grid-template-columns: 30% 70%;
 
   .checkboard {
-    width: 75px;
+    width: 60px;
     position: absolute;
-    top: -18px;
-    left: -20px;
+    top: -15px;
+    left: -16px;
     z-index: -100;
   }
 
@@ -41,14 +41,14 @@
   }
 
   .name {
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 8px;
   }
 
   .role {
     color: $red;
     font-style: italic;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   hr {
@@ -58,6 +58,8 @@
   }
   
   .description {
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
   }
 }
