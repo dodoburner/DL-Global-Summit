@@ -10,11 +10,12 @@ header {
 
 header img {
   width: 40px;
+  cursor: pointer;
 }
 
 #headline-section {
   background-color: #f4f4f4;
-  padding: 40px 20px 100px 20px;
+  padding: 30px 20px 80px 20px;
 }
 
 #headline-section .p1 {
