@@ -114,14 +114,14 @@ header img {
 
 #programs-container .program-container {
   background-color: #474b54;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 40% 60%;
-      grid-template-columns: 40% 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 20px;
+  padding: 20px;
 }
 
 #programs-container .program-container div {
@@ -187,10 +187,10 @@ header img {
 
 .speaker-container {
   position: relative;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 30% 70%;
-      grid-template-columns: 30% 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5%;
 }
 
 .speaker-container .checkboard {
@@ -208,6 +208,8 @@ header img {
      object-fit: cover;
   -o-object-position: bottom;
      object-position: bottom;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .speaker-container .name {
