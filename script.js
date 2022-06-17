@@ -6,6 +6,15 @@ speakersSection.innerHTML = `
   <hr>
 </h3>
 `;
+const moreButton = document.createElement('button');
+moreButton.classList.add('more-btn')
+moreButton.innerHTML = `
+  MORE
+  <i class="fa-solid fa-angle-down"></i>
+`;
+speakersSection.appendChild(moreButton);
+const main = document.querySelector('main');
+main.appendChild(speakersSection)
 
 const speakers = [
   {
@@ -46,31 +55,40 @@ const speakers = [
   }
 ]
 
-speakers.forEach((speaker) => {
-  const speakerContainer = document.createElement('div');
-  speakerContainer.classList.add('speaker-container');
-  speakerContainer.innerHTML = `
-  <img class="checkboard" src="images/checkboard.png" alt="checkboard-decoration">
-  <img class="speaker-img" src="${speaker.img}" alt="dog">
+let position = 2;
+let i = 0;
+function createSpeakers() {
+  for (i; i < position; i++) {
+    const speakerContainer = document.createElement('div');
+    speakerContainer.classList.add('speaker-container');
+    speakerContainer.innerHTML = `
+    <img class="checkboard" src="images/checkboard.png" alt="checkboard-decoration">
+    <img class="speaker-img" src="${speakers[i].img}" alt="dog">
+  
+    <div>
+      <h5 class="name">
+        ${speakers[i].name}
+      </h5>
+  
+      <p class="role">
+        ${speakers[i].role}
+        <hr>
+      </p>
+  
+      <p class="description">
+        ${speakers[i].description}
+      </p>
+    </div>
+    `;
+    speakersSection.insertBefore(speakerContainer, moreButton)
+  }
+  position +=2
+}
 
-  <div>
-    <h5 class="name">
-      ${speaker.name}
-    </h5>
+createSpeakers()
 
-    <p class="role">
-      ${speaker.role}
-      <hr>
-    </p>
-
-    <p class="description">
-      ${speaker.description}
-    </p>
-  </div>
-  `;
-
-  speakersSection.appendChild(speakerContainer)
-});
-
-const main = document.querySelector('main');
-main.appendChild(speakersSection)
+moreButton.addEventListener('click', () => {
+  if (position < 8) {
+    createSpeakers()
+  }
+})

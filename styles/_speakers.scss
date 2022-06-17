@@ -65,3 +65,18 @@
     font-weight: 400;
   }
 }
+
+.more-btn {
+  border: 1px solid $gray;
+  background-color: white;
+  color: $black;
+  width: 100%;
+  padding: 18px;
+  font-size: 16px;
+  cursor: pointer;
+
+  i {
+    color: $red;
+    margin-left: 8px;
+  }
+}
