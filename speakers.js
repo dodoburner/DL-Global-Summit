@@ -57,7 +57,7 @@ const speakers = [
 
 let position = 2;
 let i = 0;
-function createSpeakers() {
+function createSpeakersMobile() {
   for (i; i < position; i += 1) {
     const speakerContainer = document.createElement('div');
     speakerContainer.classList.add('speaker-container');
@@ -85,10 +85,10 @@ function createSpeakers() {
   position += 2;
 }
 
-createSpeakers();
+createSpeakersMobile();
 
 moreButton.addEventListener('click', () => {
   if (position < 8) {
-    createSpeakers();
+    createSpeakersMobile();
   }
 });
