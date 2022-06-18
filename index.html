@@ -14,18 +14,41 @@
   <script src="mobile-menu.js" defer></script>
 </head>
 <body>
+  <div id="mobile-menu" class="display-none">
+    <i class="fa-solid fa-xmark"></i>
+    <ul>
+      <li><a href="">About</a></li>
+      <li><a href="">Program</a></li>
+      <li><a href="">Join</a></li>
+      <li><a href="">Sponsor</a></li>
+      <li><a href="">News</a></li>
+    </ul>
+  </div>
+
   <header>
     <img id="hamburger-menu" src="images/icons8-menu.svg" alt="navigation-menu">
 
-    <nav id="mobile-menu" class="display-none">
-      <i class="fa-solid fa-xmark"></i>
+    <div class="logo">
+      <a href="/index.html">
+        <img src="images/logo.png" alt="logo">
+        <p>
+          DL Global <br> <span>Summit 2022</span>
+        </p>
+      </a>
+    </div>
+
+    <nav>
       <ul>
-        <li><a href="">About</a></li>
+        <li><a href="/about.html">About</a></li>
         <li><a href="">Program</a></li>
         <li><a href="">Join</a></li>
         <li><a href="">Sponsor</a></li>
         <li><a href="">News</a></li>
       </ul>
+
+      <button type="button">
+        DL Campaign
+      </button>
     </nav>
   </header>
 
@@ -35,7 +58,7 @@
         "Hello! Dog loving world!"
       </p>
       <h1>
-        Dog Lovers Global Summit 2022
+        DOG LOVERS GLOBAL SUMMIT 2022
       </h1>
       <div class="p2-container">
         <p class="p2">
@@ -122,32 +145,24 @@
       </button>
     </section>
 
-    <!-- <section id="speakers-section">
-      <h3>
-        Featured Speakers
-        <hr>
+    <footer class="sponsor-section sponsor-section-home">
+      <h3 class="about-h3">
+        Partner
       </h3>
-
-      <div class="speaker-container">
-        <img class="checkboard" src="images/checkboard.png" alt="checkboard-decoration">
-        <img class="speaker-img" src="images/dog1.avif" alt="dog">
-
+  
+      <div class="sponsor-images">
         <div>
-          <h5 class="name">
-            Axel Shnitzel
-          </h5>
-  
-          <p class="role">
-            Loyal family dog and ocassional gangster
-            <hr>
-          </p>
-  
-          <p class="description">
-            Axel is a loving dog but with a temper, don't get on his bad side
-          </p>
+          <img class="sponsor" src="images/sponsors/amazon.png" alt="amazon logo">
+          <img class="sponsor" src="images/sponsors/google.png" alt="google logo">
+          <img class="sponsor" src="images/sponsors/national.png" alt="naver logo">
+        </div>
+    
+        <div>
+          <img class="sponsor" src="images/sponsors/whiskas.png" alt="whiskas logo">
+          <img class="sponsor" src="images/sponsors/airbnb.png" alt="airbnb logo">
         </div>
       </div>
-    </section> -->
+    </footer>
   </main>
 </body>
 </html>

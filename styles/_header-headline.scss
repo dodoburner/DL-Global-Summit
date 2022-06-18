@@ -1,8 +1,8 @@
 @import 'variables';
 
 header {
-  background-color: rgb(244, 244, 244);
-  padding: 16px 30px;
+  background-color: rgba(244, 244, 244, 0.8);
+  padding: 16px 30px 6px;
   position: fixed;
   top: 0;
   left: 0;
@@ -12,6 +12,14 @@ header {
     width: 40px;
     cursor: pointer;
   }
+
+  .logo {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
 }
 
 #mobile-menu {
@@ -20,8 +28,7 @@ header {
   bottom: 0;
   right: 0;
   left: 0;
-  padding-top: 40px;
-  padding-left: 40px;
+  padding: 60px 30px 60px 60px;
   background-color: rgba($color: white, $alpha: 0.8);
   backdrop-filter: blur(5px);
   color: $red;
@@ -77,3 +84,76 @@ header {
     font-size: 17px;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  #hamburger-menu {
+    display: none;
+  }
+
+  header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+
+    .logo {
+      display: initial;
+      flex-shrink: 0;
+      margin-right: 30px;
+
+      a {
+        display: flex;
+        gap: 2px;
+        font-weight: 700;
+      }
+
+      span {
+        font-size: 15px;
+      }
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+
+      ul {
+        display: flex;
+        gap: 50px;
+
+        li:nth-child(1) {
+          color: $red;
+        }
+      }
+
+      button {
+        margin-left: 50px;
+        border: 4px solid $red;
+        padding: 10px 15px;
+        background-color: white;
+        color: $red;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .headline-section {
+    padding: 8% 15% 12%;
+    .p1 {
+      font-size: 36px;
+    }
+
+    h1 {
+      font-size: 52px;
+      font-weight: 400;
+      line-height: 48px;
+      max-width: 500px;
+    }
+
+    .p2-container {
+      max-width: 500px;
+    }
+  }
+}
+
+

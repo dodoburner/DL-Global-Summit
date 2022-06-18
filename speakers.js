@@ -6,6 +6,12 @@ speakersSection.innerHTML = `
   <hr>
 </h3>
 `;
+const main = document.querySelector('main');
+const sponsorSection = document.querySelector('.sponsor-section');
+main.insertBefore(speakersSection, sponsorSection);
+const gridContainer = document.createElement('div');
+gridContainer.id = 'grid-container'
+speakersSection.appendChild(gridContainer)
 const moreButton = document.createElement('button');
 moreButton.classList.add('more-btn');
 moreButton.innerHTML = `
@@ -13,8 +19,6 @@ moreButton.innerHTML = `
   <i class="fa-solid fa-angle-down"></i>
 `;
 speakersSection.appendChild(moreButton);
-const main = document.querySelector('main');
-main.appendChild(speakersSection);
 
 const speakers = [
   {
@@ -55,40 +59,38 @@ const speakers = [
   },
 ];
 
-let position = 2;
-let i = 0;
 function createSpeakers() {
-  for (i; i < position; i += 1) {
-    const speakerContainer = document.createElement('div');
-    speakerContainer.classList.add('speaker-container');
-    speakerContainer.innerHTML = `
-    <img class="checkboard" src="images/checkboard.png" alt="checkboard-decoration">
-    <img class="speaker-img" src="${speakers[i].img}" alt="dog">
-  
-    <div>
-      <h5 class="name">
-        ${speakers[i].name}
-      </h5>
-  
-      <p class="role">
-        ${speakers[i].role}
-        <hr>
-      </p>
-  
-      <p class="description">
-        ${speakers[i].description}
-      </p>
-    </div>
-    `;
-    speakersSection.insertBefore(speakerContainer, moreButton);
+  for (let i = 0; i < speakers.length; i++) {
+  const speakerContainer = document.createElement('div');
+  speakerContainer.classList.add('speaker-container');
+  speakerContainer.innerHTML = `
+  <img class="checkboard" src="images/checkboard.png" alt="checkboard-decoration">
+  <img class="speaker-img" src="${speakers[i].img}" alt="dog">
+
+  <div>
+    <h5 class="name">
+      ${speakers[i].name}
+    </h5>
+
+    <p class="role">
+      ${speakers[i].role}
+      <hr>
+    </p>
+
+    <p class="description">
+      ${speakers[i].description}
+    </p>
+  </div>
+  `;
+  gridContainer.appendChild(speakerContainer);
   }
-  position += 2;
 }
 
-createSpeakers();
+createSpeakers()
+const speakersArr = document.querySelectorAll('.speaker-container');
 
 moreButton.addEventListener('click', () => {
-  if (position < 8) {
-    createSpeakers();
-  }
+  speakersArr.forEach((speaker) => {
+      speaker.style.display = 'flex'
+  })
 });

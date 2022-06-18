@@ -21,6 +21,7 @@
 
   .speaker-container {
     position: relative;
+    z-index: -10;
     display: flex;
     gap: 5%;
     margin-bottom: 50px;
@@ -78,5 +79,34 @@
       color: $red;
       margin-left: 8px;
     }
+  }
+
+  .speaker-container:nth-child(2),
+  .speaker-container:nth-child(3),
+  .speaker-container:nth-child(4),
+  .speaker-container:nth-child(5) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .more-btn {
+    display: none;
+  }
+
+  #grid-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 3;
+    column-gap: 15px;
+
+  .speaker-container:nth-child(2),
+  .speaker-container:nth-child(3),
+  .speaker-container:nth-child(4),
+  .speaker-container:nth-child(5) {
+    display: flex;
+  }
   }
 }
