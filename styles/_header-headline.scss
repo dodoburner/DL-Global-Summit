@@ -94,8 +94,7 @@ header {
     background-color: white;
     display: flex;
     justify-content: space-between;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding: 15px 15%;
 
     .logo {
       display: initial;
@@ -104,6 +103,7 @@ header {
 
       a {
         display: flex;
+        align-items: center;
         gap: 2px;
         font-weight: 700;
       }
