@@ -327,6 +327,70 @@ header img {
   border-bottom: 1px solid;
 }
 
+.logo-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 30px 20px 50px;
+}
+
+.logo-section h3 {
+  font-size: 22px;
+  max-width: 80%;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+.logo-section .logo-description {
+  font-size: 15px;
+  max-width: 80%;
+  line-height: 22px;
+  margin-bottom: 40px;
+}
+
+.logo-section .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #d3d3d3;
+  font-weight: 600;
+}
+
+.logo-section .logo img {
+  width: 90px;
+}
+
+.logo-section .logo p {
+  font-size: 34px;
+  line-height: 34px;
+  text-align: start;
+}
+
+.logo-section .logo p span {
+  font-size: 30px;
+}
+
 p,
 h1,
 h2,
