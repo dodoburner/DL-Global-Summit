@@ -1,7 +1,8 @@
-@import 'header-headline';
 @import 'variables';
+@import 'header-headline';
 @import 'program';
 @import 'speakers';
+@import 'about';
 
 p,
 h1,
@@ -33,7 +34,7 @@ body {
   color: $black;
   margin: 0;
   padding-top: 75px;
-}  
+}
 
 .display-none {
   display: none;
