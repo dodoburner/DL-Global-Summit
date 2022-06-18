@@ -118,13 +118,6 @@ header img {
   margin-bottom: 26px;
 }
 
-#program-section h3 hr {
-  width: 50px;
-  border-color: #ec5242;
-  border-top: none;
-  border-width: 2px;
-}
-
 #program-section button {
   background-color: #ec5242;
   color: white;
