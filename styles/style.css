@@ -401,8 +401,29 @@ header .logo {
   margin-left: 8px;
 }
 
+#speakers-section .speaker-container:nth-child(2),
+#speakers-section .speaker-container:nth-child(3),
+#speakers-section .speaker-container:nth-child(4),
+#speakers-section .speaker-container:nth-child(5) {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   .more-btn {
+    display: none;
+  }
+  #grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (40%)[2];
+        grid-template-columns: repeat(2, 40%);
+    -ms-grid-rows: 3;
+        grid-template-rows: 3;
+  }
+  #grid-container .speaker-container:nth-child(2),
+  #grid-container .speaker-container:nth-child(3),
+  #grid-container .speaker-container:nth-child(4),
+  #grid-container .speaker-container:nth-child(5) {
     display: none;
   }
 }

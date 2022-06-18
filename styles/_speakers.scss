@@ -79,10 +79,30 @@
       margin-left: 8px;
     }
   }
+
+  .speaker-container:nth-child(2),
+  .speaker-container:nth-child(3),
+  .speaker-container:nth-child(4),
+  .speaker-container:nth-child(5) {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .more-btn {
     display: none;
+  }
+
+  #grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: 3;
+
+  .speaker-container:nth-child(2),
+  .speaker-container:nth-child(3),
+  .speaker-container:nth-child(4),
+  .speaker-container:nth-child(5) {
+    display: none;
+  }
   }
 }
