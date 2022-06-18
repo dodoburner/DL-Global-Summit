@@ -22,6 +22,10 @@ header img {
   cursor: pointer;
 }
 
+header .logo {
+  display: none;
+}
+
 #mobile-menu {
   position: fixed;
   top: 0;
@@ -85,6 +89,53 @@ header img {
 
 .headline-section .p4 {
   font-size: 17px;
+}
+
+@media only screen and (min-width: 768px) {
+  #hamburger-menu {
+    display: none;
+  }
+  header {
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .logo {
+    display: initial;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  header .logo a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2px;
+    font-weight: 700;
+  }
+  header .logo span {
+    font-size: 15px;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+  }
+  header nav button {
+    margin-left: 50px;
+  }
 }
 
 @font-face {

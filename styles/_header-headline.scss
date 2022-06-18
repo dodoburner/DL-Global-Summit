@@ -12,6 +12,10 @@ header {
     width: 40px;
     cursor: pointer;
   }
+
+  .logo {
+    display: none;
+  }
 }
 
 #mobile-menu {
@@ -75,5 +79,46 @@ header {
 
   .p4 {
     font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #hamburger-menu {
+    display: none;
+  }
+
+  header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      display: initial;
+      flex-shrink: 0;
+
+      a {
+        display: flex;
+        gap: 2px;
+        font-weight: 700;
+      }
+
+      span {
+        font-size: 15px;
+      }
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+
+      ul {
+        display: flex;
+        gap: 50px;
+      }
+
+      button {
+        margin-left: 50px;
+      }
+    }
   }
 }
