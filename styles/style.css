@@ -3,6 +3,11 @@
   src: url(/cocogoose/Cocogoose_trial.otf) format("truetype");
 }
 
+@font-face {
+  font-family: 'Cocogoose';
+  src: url(/cocogoose/Cocogoose_trial.otf) format("truetype");
+}
+
 header {
   background-color: #f4f4f4;
   padding: 16px 30px;
@@ -78,11 +83,6 @@ header img {
 
 .headline-section .p4 {
   font-size: 18px;
-}
-
-@font-face {
-  font-family: 'Cocogoose';
-  src: url(/cocogoose/Cocogoose_trial.otf) format("truetype");
 }
 
 @font-face {
@@ -279,6 +279,26 @@ header img {
 #speakers-section .more-btn i {
   color: #ec5242;
   margin-left: 8px;
+}
+
+.about-headline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-headline h1 {
+  text-align: center;
 }
 
 p,
