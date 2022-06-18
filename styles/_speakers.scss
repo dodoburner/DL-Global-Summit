@@ -18,65 +18,65 @@
       border-color: $red;
     }
   }
-}
 
-.speaker-container {
-  position: relative;
-  display: flex;
-  gap: 5%;  
-  margin-bottom: 50px;
+  .speaker-container {
+    position: relative;
+    display: flex;
+    gap: 5%;
+    margin-bottom: 50px;
 
-  .checkboard {
-    width: 60px;
-    position: absolute;
-    top: -15px;
-    left: -16px;
-    z-index: -100;
+    .checkboard {
+      width: 60px;
+      position: absolute;
+      top: -15px;
+      left: -16px;
+      z-index: -100;
+    }
+
+    .speaker-img {
+      width: 125px;
+      height: 125px;
+      object-fit: cover;
+      object-position: bottom;
+      flex-shrink: 0;
+    }
+
+    .name {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .role {
+      color: $red;
+      font-style: italic;
+      font-size: 16px;
+    }
+
+    hr {
+      width: 30px;
+      border-color: $gray;
+      margin: 8px 0;
+    }
+
+    .description {
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 400;
+    }
   }
 
-  .speaker-img {
-    width: 125px;
-    height: 125px;
-    object-fit: cover;
-    object-position: bottom;
-    flex-shrink:0
-  }
-
-  .name {
-    font-size: 20px;
-    margin-bottom: 8px;
-  }
-
-  .role {
-    color: $red;
-    font-style: italic;
+  .more-btn {
+    border: 1px solid $gray;
+    background-color: white;
+    color: $black;
+    width: 100%;
+    padding: 18px;
     font-size: 16px;
-  }
+    cursor: pointer;
 
-  hr {
-    width: 30px;
-    border-color: $gray;
-    margin: 8px 0px;
-  }
-  
-  .description {
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-  }
-}
-
-.more-btn {
-  border: 1px solid $gray;
-  background-color: white;
-  color: $black;
-  width: 100%;
-  padding: 18px;
-  font-size: 16px;
-  cursor: pointer;
-
-  i {
-    color: $red;
-    margin-left: 8px;
+    i {
+      color: $red;
+      margin-left: 8px;
+    }
   }
 }

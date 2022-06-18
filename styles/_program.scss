@@ -18,8 +18,8 @@
     hr {
       width: 50px;
       border-color: $red;
-       border-top: none;
-       border-width: 2px;
+      border-top: none;
+      border-width: 2px;
     }
   }
 
@@ -45,8 +45,14 @@
     display: flex;
     gap: 10px;
     align-items: center;
-    padding:20px;
-    
+    padding: 20px;
+
+    p {
+      font-size: 14px;
+      color: white;
+      line-height: 24px;
+    }
+
     div {
       display: flex;
       align-items: center;
@@ -62,12 +68,6 @@
         font-size: 18px;
         font-weight: 600;
       }
-    }
-
-    p {
-      font-size: 14px;
-      color: white;
-      line-height: 24px;
     }
   }
 }

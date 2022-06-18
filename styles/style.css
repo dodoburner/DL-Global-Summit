@@ -19,13 +19,13 @@ header img {
 }
 
 #headline-section .p1 {
-  color: #EC5242;
+  color: #ec5242;
   font-size: 24px;
   margin-bottom: 10px;
 }
 
 #headline-section h1 {
-  color: #EC5242;
+  color: #ec5242;
   font-family: "Cocogoose", sans-serif;
   font-size: 40px;
   line-height: 48px;
@@ -61,7 +61,7 @@ header img {
 }
 
 #program-section {
-  background-color: #272A31;
+  background-color: #272a31;
   padding: 40px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,13 +88,13 @@ header img {
 
 #program-section h3 hr {
   width: 50px;
-  border-color: #EC5242;
+  border-color: #ec5242;
   border-top: none;
   border-width: 2px;
 }
 
 #program-section button {
-  background-color: #EC5242;
+  background-color: #ec5242;
   color: white;
   font-size: 20px;
   padding: 30px 40px;
@@ -124,6 +124,12 @@ header img {
   padding: 20px;
 }
 
+#programs-container .program-container p {
+  font-size: 14px;
+  color: white;
+  line-height: 24px;
+}
+
 #programs-container .program-container div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,15 +146,9 @@ header img {
 }
 
 #programs-container .program-container div p {
-  color: #EC5242;
+  color: #ec5242;
   font-size: 18px;
   font-weight: 600;
-}
-
-#programs-container .program-container p {
-  font-size: 14px;
-  color: white;
-  line-height: 24px;
 }
 
 @font-face {
@@ -182,10 +182,10 @@ header img {
   width: 50px;
   border-top: none;
   border-width: 2px;
-  border-color: #EC5242;
+  border-color: #ec5242;
 }
 
-.speaker-container {
+#speakers-section .speaker-container {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,7 +194,7 @@ header img {
   margin-bottom: 50px;
 }
 
-.speaker-container .checkboard {
+#speakers-section .speaker-container .checkboard {
   width: 60px;
   position: absolute;
   top: -15px;
@@ -202,7 +202,7 @@ header img {
   z-index: -100;
 }
 
-.speaker-container .speaker-img {
+#speakers-section .speaker-container .speaker-img {
   width: 125px;
   height: 125px;
   -o-object-fit: cover;
@@ -213,41 +213,41 @@ header img {
       flex-shrink: 0;
 }
 
-.speaker-container .name {
+#speakers-section .speaker-container .name {
   font-size: 20px;
   margin-bottom: 8px;
 }
 
-.speaker-container .role {
-  color: #EC5242;
+#speakers-section .speaker-container .role {
+  color: #ec5242;
   font-style: italic;
   font-size: 16px;
 }
 
-.speaker-container hr {
+#speakers-section .speaker-container hr {
   width: 30px;
-  border-color: #D3D3D3;
-  margin: 8px 0px;
+  border-color: #d3d3d3;
+  margin: 8px 0;
 }
 
-.speaker-container .description {
+#speakers-section .speaker-container .description {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
 }
 
-.more-btn {
-  border: 1px solid #D3D3D3;
+#speakers-section .more-btn {
+  border: 1px solid #d3d3d3;
   background-color: white;
-  color: #272A31;
+  color: #272a31;
   width: 100%;
   padding: 18px;
   font-size: 16px;
   cursor: pointer;
 }
 
-.more-btn i {
-  color: #EC5242;
+#speakers-section .more-btn i {
+  color: #ec5242;
   margin-left: 8px;
 }
 
@@ -266,7 +266,7 @@ button {
 
 body {
   font-family: "Lato", sans-serif;
-  color: #272A31;
+  color: #272a31;
   margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
