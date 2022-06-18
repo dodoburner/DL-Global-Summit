@@ -21,6 +21,7 @@
 
   .speaker-container {
     position: relative;
+    z-index: -10;
     display: flex;
     gap: 5%;
     margin-bottom: 50px;

@@ -1,8 +1,8 @@
 @import 'variables';
 
 header {
-  background-color: rgb(244, 244, 244);
-  padding: 16px 30px;
+  background-color: rgba(244, 244, 244, 0.8);
+  padding: 16px 30px 6px;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,6 +16,10 @@ header {
   .logo {
     display: none;
   }
+
+  nav {
+    display: none;
+  }
 }
 
 #mobile-menu {
@@ -24,8 +28,7 @@ header {
   bottom: 0;
   right: 0;
   left: 0;
-  padding-top: 40px;
-  padding-left: 40px;
+  padding: 60px 30px 60px 60px;
   background-color: rgba($color: white, $alpha: 0.8);
   backdrop-filter: blur(5px);
   color: $red;

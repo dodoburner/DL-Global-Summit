@@ -9,8 +9,8 @@
 }
 
 header {
-  background-color: #f4f4f4;
-  padding: 16px 30px;
+  background-color: rgba(244, 244, 244, 0.8);
+  padding: 16px 30px 6px;
   position: fixed;
   top: 0;
   left: 0;
@@ -26,14 +26,17 @@ header .logo {
   display: none;
 }
 
+header nav {
+  display: none;
+}
+
 #mobile-menu {
   position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  padding-top: 40px;
-  padding-left: 40px;
+  padding: 60px 30px 60px 60px;
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -296,9 +299,6 @@ header .logo {
   #programs-container .program-container div p {
     font-size: 20px;
   }
-  #programs-container .program-container:hover {
-    border: 3px solid white;
-  }
 }
 
 @font-face {
@@ -337,6 +337,7 @@ header .logo {
 
 #speakers-section .speaker-container {
   position: relative;
+  z-index: -10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -650,19 +651,6 @@ header .logo {
           filter: invert(70%) sepia(1%) saturate(4%) hue-rotate(16deg) brightness(91%) contrast(90%);
 }
 
-@media only screen and (min-width: 768px) {
-  .sponsor-section .about-h3 {
-    color: #d3d3d3;
-    font-weight: 400;
-  }
-  .sponsor-section .sponsor-images {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 35px;
-  }
-}
-
 p,
 h1,
 h2,
@@ -692,7 +680,7 @@ body {
   font-family: "Lato", sans-serif;
   color: #272a31;
   margin: 0;
-  padding-top: 75px;
+  padding-top: 51px;
 }
 
 .display-none {
@@ -703,5 +691,27 @@ body {
   margin: 0;
   height: 100%;
   overflow: hidden;
+}
+
+.sponsor-section-home {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .sponsor-section-home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sponsor-section .about-h3 {
+    color: #d3d3d3;
+    font-weight: 400;
+  }
+  .sponsor-section .sponsor-images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 35px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

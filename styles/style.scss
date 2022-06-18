@@ -33,7 +33,7 @@ body {
   font-family: $lato;
   color: $black;
   margin: 0;
-  padding-top: 75px;
+  padding-top: 51px;
 }
 
 .display-none {
@@ -44,4 +44,26 @@ body {
   margin: 0;
   height: 100%;
   overflow: hidden;
+}
+
+.sponsor-section-home {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .sponsor-section-home {
+    display: flex;
+  }
+
+  .sponsor-section {
+    .about-h3 {
+      color: $gray;
+      font-weight: 400;
+    }
+
+    .sponsor-images {
+      display: flex;
+      gap: 35px;
+    }
+  }
 }
