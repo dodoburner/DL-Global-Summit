@@ -1,0 +1,17 @@
+@import 'header-headline';
+@import 'variables';
+@import 'program';
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+body {
+  font-family: $lato;
+  color: $black;
+  margin: 0;
+}  
