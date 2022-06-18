@@ -74,6 +74,7 @@ header img {
   border: 4px solid white;
   padding: 15px;
   margin-bottom: 20px;
+  color: #746f6f;
 }
 
 .headline-section .p3 {
@@ -296,10 +297,34 @@ header img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 50px;
 }
 
-.about-headline h1 {
+.about-headline .about-h1 {
   text-align: center;
+  margin-bottom: 36px;
+}
+
+.about-headline .about-p2-container {
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 26px;
+}
+
+.about-headline .about-p5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #5e6067;
+  text-align: center;
+  max-width: 85%;
+  line-height: 24px;
+}
+
+.about-headline .about-p5 span {
+  color: initial;
+  border-bottom: 1px solid;
 }
 
 p,

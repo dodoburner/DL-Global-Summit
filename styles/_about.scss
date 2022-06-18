@@ -3,9 +3,33 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 50px;
 
-  h1 {
+  .about-h1 {
     text-align: center;
+    margin-bottom: 36px;
+  }
+
+  .about-p2-container {
+    background-color: white;
+    border: 1px solid $gray;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 26px;
+  }
+
+  .about-p5 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #5e6067;
+    text-align: center;
+    max-width: 85%;
+    line-height: 24px;
+
+    span {
+      color: initial;
+      border-bottom: 1px solid ;
+    }
   }
 }
 
