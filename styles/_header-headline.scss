@@ -91,10 +91,13 @@ header {
     background-color: white;
     display: flex;
     justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
 
     .logo {
       display: initial;
       flex-shrink: 0;
+      margin-right: 30px;
 
       a {
         display: flex;
@@ -126,7 +129,28 @@ header {
         padding: 10px 15px;
         background-color: white;
         color: $red;
+        flex-shrink: 0;
       }
     }
   }
+
+  .headline-section {
+    padding: 8% 15% 12%;
+    .p1 {
+      font-size: 36px;
+    }
+
+    h1 {
+      font-size: 52px;
+      font-weight: 400;
+      line-height: 48px;
+      max-width: 500px;
+    }
+
+    .p2-container {
+      max-width: 500px;
+    }
+  }
 }
+
+

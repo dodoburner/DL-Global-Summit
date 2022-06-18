@@ -103,11 +103,14 @@ header .logo {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
   }
   header .logo {
     display: initial;
     -ms-flex-negative: 0;
         flex-shrink: 0;
+    margin-right: 30px;
   }
   header .logo a {
     display: -webkit-box;
@@ -142,6 +145,23 @@ header .logo {
     padding: 10px 15px;
     background-color: white;
     color: #ec5242;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .headline-section {
+    padding: 8% 15% 12%;
+  }
+  .headline-section .p1 {
+    font-size: 36px;
+  }
+  .headline-section h1 {
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 48px;
+    max-width: 500px;
+  }
+  .headline-section .p2-container {
+    max-width: 500px;
   }
 }
 
