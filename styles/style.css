@@ -43,18 +43,18 @@ header img {
   cursor: pointer;
 }
 
-#headline-section {
+.headline-section {
   background-color: #f4f4f4;
   padding: 30px 20px 80px 20px;
 }
 
-#headline-section .p1 {
+.headline-section .p1 {
   color: #ec5242;
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-#headline-section h1 {
+.headline-section h1 {
   color: #ec5242;
   font-family: "Cocogoose", sans-serif;
   font-size: 40px;
@@ -62,7 +62,7 @@ header img {
   margin-bottom: 20px;
 }
 
-#headline-section .p2-container {
+.headline-section .p2-container {
   font-weight: 600;
   line-height: 24px;
   border: 4px solid white;
@@ -70,13 +70,13 @@ header img {
   margin-bottom: 20px;
 }
 
-#headline-section .p3 {
+.headline-section .p3 {
   font-family: "Cocogoose", sans-serif;
   font-size: 30px;
   margin-bottom: 5px;
 }
 
-#headline-section .p4 {
+.headline-section .p4 {
   font-size: 18px;
 }
 
