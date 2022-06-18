@@ -7,7 +7,8 @@ speakersSection.innerHTML = `
 </h3>
 `;
 const main = document.querySelector('main');
-main.appendChild(speakersSection);
+const sponsorSection = document.querySelector('.sponsor-section');
+main.insertBefore(speakersSection, sponsorSection);
 const gridContainer = document.createElement('div');
 gridContainer.id = 'grid-container'
 speakersSection.appendChild(gridContainer)
