@@ -85,10 +85,41 @@ function createSpeakersMobile() {
   position += 2;
 }
 
-createSpeakersMobile();
+function createSpeakers() {
+  for (let i = 0; i < speakers.length; i++) {
+    const speakerContainer = document.createElement('div');
+  speakerContainer.classList.add('speaker-container');
+  speakerContainer.innerHTML = `
+  <img class="checkboard" src="images/checkboard.png" alt="checkboard-decoration">
+  <img class="speaker-img" src="${speakers[i].img}" alt="dog">
 
-moreButton.addEventListener('click', () => {
-  if (position < 8) {
-    createSpeakersMobile();
+  <div>
+    <h5 class="name">
+      ${speakers[i].name}
+    </h5>
+
+    <p class="role">
+      ${speakers[i].role}
+      <hr>
+    </p>
+
+    <p class="description">
+      ${speakers[i].description}
+    </p>
+  </div>
+  `;
+  speakersSection.appendChild(speakerContainer);
   }
-});
+}
+
+const mediaQuery = window.matchMedia('(min-width: 768px)');
+if (mediaQuery.matches === true) {
+  createSpeakers()
+} else {
+  createSpeakersMobile();
+  moreButton.addEventListener('click', () => {
+    if (position < 8) {
+      createSpeakersMobile();
+    }
+  });
+}
