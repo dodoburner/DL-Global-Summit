@@ -10,11 +10,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/593ea6dc88.js" crossorigin="anonymous"></script>
   <title>DL Global Summit 2022</title>
-  <script src="script.js" defer></script>
+  <script src="speakers.js" defer></script>
+  <script src="mobile-menu.js" defer></script>
 </head>
 <body>
   <header>
-    <img src="images/icons8-menu.svg" alt="navigation-menu">
+    <img id="hamburger-menu" src="images/icons8-menu.svg" alt="navigation-menu">
+
+    <nav id="mobile-menu" class="display-none">
+      <i class="fa-solid fa-xmark"></i>
+      <ul>
+        <li><a href="">About</a></li>
+        <li><a href="">Program</a></li>
+        <li><a href="">Join</a></li>
+        <li><a href="">Sponsor</a></li>
+        <li><a href="">News</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
