@@ -297,18 +297,17 @@ header img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   padding-bottom: 50px;
 }
 
 .about-headline .about-h1 {
-  text-align: center;
   margin-bottom: 36px;
 }
 
 .about-headline .about-p2-container {
   background-color: white;
   border: 1px solid #d3d3d3;
-  text-align: center;
   padding: 20px;
   margin-bottom: 26px;
 }
@@ -317,7 +316,6 @@ header img {
   font-size: 14px;
   font-weight: 600;
   color: #5e6067;
-  text-align: center;
   max-width: 85%;
   line-height: 24px;
 }
@@ -325,6 +323,20 @@ header img {
 .about-headline .about-p5 span {
   color: initial;
   border-bottom: 1px solid;
+}
+
+.about-h3 {
+  font-size: 22px;
+  max-width: 80%;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+.logo-description {
+  font-size: 15px;
+  max-width: 80%;
+  line-height: 22px;
+  margin-bottom: 40px;
 }
 
 .logo-section {
@@ -343,33 +355,27 @@ header img {
           justify-content: center;
   text-align: center;
   padding: 30px 20px 50px;
-}
-
-.logo-section h3 {
-  font-size: 22px;
-  max-width: 80%;
-  margin-bottom: 20px;
-  line-height: 30px;
-}
-
-.logo-section .logo-description {
-  font-size: 15px;
-  max-width: 80%;
-  line-height: 22px;
-  margin-bottom: 40px;
+  border-bottom: 1px solid #d3d3d3;
 }
 
 .logo-section .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  width: 100%;
   padding: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -389,6 +395,63 @@ header img {
 
 .logo-section .logo p span {
   font-size: 30px;
+}
+
+.past-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.past-section div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 80%;
+  height: 220px;
+  margin-bottom: 20px;
+  color: white;
+  background: url(/images/dogs1.jpeg) no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(178, 24, 7, 0.7);
+          box-shadow: inset 0 0 0 1000px rgba(178, 24, 7, 0.7);
+}
+
+.past-section div p {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.past-section div p span {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.past-section .event2 {
+  background: url(/images/dogs2.jpeg) no-repeat;
+  background-size: cover;
 }
 
 p,
