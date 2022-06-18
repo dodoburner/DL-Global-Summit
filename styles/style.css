@@ -254,6 +254,53 @@ header .logo {
   font-weight: 600;
 }
 
+@media only screen and (min-width: 768px) {
+  #program-section {
+    padding: 5% 15% 8%;
+  }
+  #program-section h3 {
+    font-size: 25px;
+  }
+  #program-section button {
+    background-color: inherit;
+    border-bottom: 1px solid white;
+    padding: 0;
+    margin-top: 70px;
+  }
+  #programs-container {
+    -ms-grid-columns: (200px)[5];
+        grid-template-columns: repeat(5, 200px);
+    -ms-grid-rows: fit-content;
+        grid-template-rows: -webkit-fit-content;
+        grid-template-rows: fit-content;
+    -webkit-column-gap: 4px;
+            column-gap: 4px;
+  }
+  #programs-container .program-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  #programs-container .program-container div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #programs-container .program-container div i {
+    margin-bottom: 8px;
+    margin-right: 0;
+  }
+  #programs-container .program-container div p {
+    font-size: 20px;
+  }
+  #programs-container .program-container:hover {
+    border: 3px solid white;
+  }
+}
+
 @font-face {
   font-family: 'Cocogoose';
   src: url(/cocogoose/Cocogoose_trial.otf) format("truetype");

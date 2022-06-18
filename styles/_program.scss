@@ -64,3 +64,48 @@
     }
   }
 }
+
+@media only screen and (min-width:768px) {
+  #program-section {
+    padding: 5% 15% 8%;
+
+    h3 {
+      font-size: 25px;
+    }
+    button {
+      background-color: inherit;
+      border-bottom: 1px solid white;
+      padding: 0;
+      margin-top: 70px;
+    }
+  }
+
+  #programs-container {
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: fit-content;
+    column-gap: 4px;
+
+    .program-container {
+      flex-direction: column;
+      text-align: center;
+
+      div {
+        flex-direction: column;
+
+        i {
+          margin-bottom: 8px;
+          margin-right: 0;
+        }
+
+        p {
+          font-size: 20px;
+        }
+      }
+
+      &:hover {
+        border: 3px solid white;
+      }
+    }
+  }
+}
+
