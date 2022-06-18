@@ -1,17 +1,23 @@
 @import 'header-headline';
 @import 'variables';
 @import 'program';
+@import 'speakers';
 
 p,
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   margin: 0;
+}
+
+button {
+  font-family: $lato;
 }
 
 body {
   font-family: $lato;
   color: $black;
   margin: 0;
-}  
+}

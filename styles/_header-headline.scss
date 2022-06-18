@@ -1,18 +1,19 @@
 @import 'variables';
 
-header { 
+header {
   background-color: rgb(244, 244, 244);
   padding: 16px 30px;
 
   img {
     width: 40px;
+    cursor: pointer;
   }
 }
 
 #headline-section {
   background-color: rgb(244, 244, 244);
-  padding: 40px 20px 100px 20px;
-  
+  padding: 30px 20px 80px 20px;
+
   .p1 {
     color: $red;
     font-size: 24px;

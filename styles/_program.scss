@@ -2,7 +2,7 @@
 
 #program-section {
   background-color: $black;
-  padding: 40px 10px;
+  padding: 40px 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,25 +10,27 @@
 
   h3 {
     color: white;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 26px;
 
     hr {
       width: 50px;
       border-color: $red;
+      border-top: none;
+      border-width: 2px;
     }
   }
 
   button {
     background-color: $red;
     color: white;
-    font-family: $lato;
     font-size: 20px;
-    padding: 35px 50px;
+    padding: 30px 40px;
     margin-top: 40px;
     cursor: pointer;
+    border: none;
   }
 }
 
@@ -40,30 +42,32 @@
 
   .program-container {
     background-color: #474b54;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    padding: 15px;
-    
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+
+    p {
+      font-size: 14px;
+      color: white;
+      line-height: 24px;
+    }
+
     div {
       display: flex;
       align-items: center;
 
       i {
-        font-size: 40px;
-        margin-right: 10px;
+        font-size: 34px;
+        margin-right: 12px;
         color: white;
       }
 
       p {
         color: $red;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 600;
       }
-    }
-
-    p {
-      color: white;
-      line-height: 24px;
     }
   }
 }

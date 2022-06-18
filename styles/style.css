@@ -10,21 +10,22 @@ header {
 
 header img {
   width: 40px;
+  cursor: pointer;
 }
 
 #headline-section {
   background-color: #f4f4f4;
-  padding: 40px 20px 100px 20px;
+  padding: 30px 20px 80px 20px;
 }
 
 #headline-section .p1 {
-  color: #EC5242;
+  color: #ec5242;
   font-size: 24px;
   margin-bottom: 10px;
 }
 
 #headline-section h1 {
-  color: #EC5242;
+  color: #ec5242;
   font-family: "Cocogoose", sans-serif;
   font-size: 40px;
   line-height: 48px;
@@ -60,8 +61,8 @@ header img {
 }
 
 #program-section {
-  background-color: #272A31;
-  padding: 40px 10px;
+  background-color: #272a31;
+  padding: 40px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,25 +80,27 @@ header img {
 
 #program-section h3 {
   color: white;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
 }
 
 #program-section h3 hr {
   width: 50px;
-  border-color: #EC5242;
+  border-color: #ec5242;
+  border-top: none;
+  border-width: 2px;
 }
 
 #program-section button {
-  background-color: #EC5242;
+  background-color: #ec5242;
   color: white;
-  font-family: "Lato", sans-serif;
   font-size: 20px;
-  padding: 35px 50px;
+  padding: 30px 40px;
   margin-top: 40px;
   cursor: pointer;
+  border: none;
 }
 
 #programs-container {
@@ -111,11 +114,20 @@ header img {
 
 #programs-container .program-container {
   background-color: #474b54;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 40% 60%;
-      grid-template-columns: 40% 60%;
-  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+#programs-container .program-container p {
+  font-size: 14px;
+  color: white;
+  line-height: 24px;
 }
 
 #programs-container .program-container div {
@@ -128,33 +140,133 @@ header img {
 }
 
 #programs-container .program-container div i {
-  font-size: 40px;
-  margin-right: 10px;
+  font-size: 34px;
+  margin-right: 12px;
   color: white;
 }
 
 #programs-container .program-container div p {
-  color: #EC5242;
-  font-size: 20px;
+  color: #ec5242;
+  font-size: 18px;
   font-weight: 600;
 }
 
-#programs-container .program-container p {
-  color: white;
-  line-height: 24px;
+@font-face {
+  font-family: 'Cocogoose';
+  src: url(/cocogoose/Cocogoose_trial.otf) format("truetype");
+}
+
+#speakers-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 20px 30px 30px;
+}
+
+#speakers-section h3 {
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+#speakers-section h3 hr {
+  width: 50px;
+  border-top: none;
+  border-width: 2px;
+  border-color: #ec5242;
+}
+
+#speakers-section .speaker-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5%;
+  margin-bottom: 50px;
+}
+
+#speakers-section .speaker-container .checkboard {
+  width: 60px;
+  position: absolute;
+  top: -15px;
+  left: -16px;
+  z-index: -100;
+}
+
+#speakers-section .speaker-container .speaker-img {
+  width: 125px;
+  height: 125px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+#speakers-section .speaker-container .name {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+#speakers-section .speaker-container .role {
+  color: #ec5242;
+  font-style: italic;
+  font-size: 16px;
+}
+
+#speakers-section .speaker-container hr {
+  width: 30px;
+  border-color: #d3d3d3;
+  margin: 8px 0;
+}
+
+#speakers-section .speaker-container .description {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+#speakers-section .more-btn {
+  border: 1px solid #d3d3d3;
+  background-color: white;
+  color: #272a31;
+  width: 100%;
+  padding: 18px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#speakers-section .more-btn i {
+  color: #ec5242;
+  margin-left: 8px;
 }
 
 p,
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   margin: 0;
+}
+
+button {
+  font-family: "Lato", sans-serif;
 }
 
 body {
   font-family: "Lato", sans-serif;
-  color: #272A31;
+  color: #272a31;
   margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
