@@ -24,8 +24,8 @@ const speakers = [
   {
     img: 'images/dog1.avif',
     name: 'Axel',
-    role: 'Loyal family dog and ocassional gangster',
-    description: 'Axel is a loving dog but with a temper, don\'t get on his bad side',
+    role: 'Actor',
+    description: 'Star of many movies with a talent many A list Hollywood stars would be jelaous of but in his personal life he is a loving family dog',
   },
   {
     img: 'images/dog2.jpeg',
