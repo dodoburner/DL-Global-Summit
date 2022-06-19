@@ -33,6 +33,11 @@
       color: initial;
       border-bottom: 1px solid;
     }
+
+    hr {
+      display: none;
+    }
+    
   }
 }
 
@@ -135,5 +140,35 @@
     max-width: 100px;
     color: gray;
     filter: invert(70%) sepia(1%) saturate(4%) hue-rotate(16deg) brightness(91%) contrast(90%);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about-headline {
+    padding-bottom: 90px;
+    .about-p1 {
+      display: none;
+    }
+  
+    .about-h1 {
+      max-width: 800px;
+      line-height: 55px;
+      margin-bottom: 18px;
+      font-size: 54px;
+    }
+
+    .about-p2-container {
+      max-width: 900px;
+      margin-bottom: 50px;
+    }
+
+    hr {
+      width: 30px;
+      height: 2px;
+      background-color: $red;
+      border: none;
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
   }
 }

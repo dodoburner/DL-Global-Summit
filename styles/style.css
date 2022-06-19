@@ -498,6 +498,10 @@ header nav {
   border-bottom: 1px solid;
 }
 
+.about-headline .about-p5 hr {
+  display: none;
+}
+
 .about-h3 {
   font-size: 22px;
   max-width: 80%;
@@ -666,6 +670,33 @@ header nav {
   color: gray;
   -webkit-filter: invert(70%) sepia(1%) saturate(4%) hue-rotate(16deg) brightness(91%) contrast(90%);
           filter: invert(70%) sepia(1%) saturate(4%) hue-rotate(16deg) brightness(91%) contrast(90%);
+}
+
+@media only screen and (min-width: 768px) {
+  .about-headline {
+    padding-bottom: 90px;
+  }
+  .about-headline .about-p1 {
+    display: none;
+  }
+  .about-headline .about-h1 {
+    max-width: 800px;
+    line-height: 55px;
+    margin-bottom: 18px;
+    font-size: 54px;
+  }
+  .about-headline .about-p2-container {
+    max-width: 900px;
+    margin-bottom: 50px;
+  }
+  .about-headline hr {
+    width: 30px;
+    height: 2px;
+    background-color: #ec5242;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
 }
 
 p,
