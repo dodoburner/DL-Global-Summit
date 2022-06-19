@@ -230,6 +230,8 @@ header nav {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #programs-container .program-container p {
@@ -261,7 +263,7 @@ header nav {
 
 @media only screen and (min-width: 768px) {
   #program-section {
-    padding: 5% 15% 8%;
+    padding: 5% 10% 8%;
   }
   #program-section h3 {
     font-size: 25px;
@@ -273,11 +275,8 @@ header nav {
     margin-top: 70px;
   }
   #programs-container {
-    -ms-grid-columns: (200px)[5];
-        grid-template-columns: repeat(5, 200px);
-    -ms-grid-rows: fit-content;
-        grid-template-rows: -webkit-fit-content;
-        grid-template-rows: fit-content;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
     -webkit-column-gap: 4px;
             column-gap: 4px;
   }
@@ -287,6 +286,8 @@ header nav {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    min-height: 225px;
+    max-width: 200px;
   }
   #programs-container .program-container div {
     -webkit-box-orient: vertical;

@@ -39,6 +39,7 @@
     gap: 10px;
     align-items: center;
     padding: 20px;
+    box-sizing: border-box;
 
     p {
       font-size: 14px;
@@ -67,7 +68,7 @@
 
 @media only screen and (min-width:768px) {
   #program-section {
-    padding: 5% 15% 8%;
+    padding: 5% 10% 8%;
 
     h3 {
       font-size: 25px;
@@ -81,13 +82,14 @@
   }
 
   #programs-container {
-    grid-template-columns: repeat(5, 200px);
-    grid-template-rows: fit-content;
+    grid-template-columns: repeat(5, 1fr);
     column-gap: 4px;
 
     .program-container {
       flex-direction: column;
       text-align: center;
+      min-height: 225px;
+      max-width: 200px;
 
       div {
         flex-direction: column;
