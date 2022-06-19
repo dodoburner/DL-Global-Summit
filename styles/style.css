@@ -448,8 +448,6 @@ header nav {
             justify-content: center;
     -ms-grid-columns: (50%)[2];
         grid-template-columns: repeat(2, 50%);
-    -ms-grid-rows: 3;
-        grid-template-rows: 3;
     -webkit-column-gap: 15px;
             column-gap: 15px;
     max-width: 1000px;
@@ -631,7 +629,7 @@ header nav {
   margin-top: 40px;
 }
 
-.past-section .events-container div {
+.past-section .events-container .event {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -659,17 +657,17 @@ header nav {
   transition: 0.3s;
 }
 
-.past-section .events-container div:hover {
+.past-section .events-container .event:hover {
   -webkit-box-shadow: inset 0 0 0 1000px rgba(178, 24, 7, 0.5);
           box-shadow: inset 0 0 0 1000px rgba(178, 24, 7, 0.5);
 }
 
-.past-section .events-container div p {
+.past-section .events-container .event p {
   font-size: 34px;
   font-weight: 700;
 }
 
-.past-section .events-container div p span {
+.past-section .events-container .event p span {
   font-size: 15px;
   font-weight: 400;
 }

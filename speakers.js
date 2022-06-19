@@ -10,8 +10,8 @@ const main = document.querySelector('main');
 const sponsorSection = document.querySelector('.sponsor-section');
 main.insertBefore(speakersSection, sponsorSection);
 const gridContainer = document.createElement('div');
-gridContainer.id = 'grid-container'
-speakersSection.appendChild(gridContainer)
+gridContainer.id = 'grid-container';
+speakersSection.appendChild(gridContainer);
 const moreButton = document.createElement('button');
 moreButton.classList.add('more-btn');
 moreButton.innerHTML = `
@@ -60,37 +60,37 @@ const speakers = [
 ];
 
 function createSpeakers() {
-  for (let i = 0; i < speakers.length; i++) {
-  const speakerContainer = document.createElement('div');
-  speakerContainer.classList.add('speaker-container');
-  speakerContainer.innerHTML = `
-  <img class="checkboard" src="images/checkboard.png" alt="checkboard-decoration">
-  <img class="speaker-img" src="${speakers[i].img}" alt="dog">
+  for (let i = 0; i < speakers.length; i += 1) {
+    const speakerContainer = document.createElement('div');
+    speakerContainer.classList.add('speaker-container');
+    speakerContainer.innerHTML = `
+    <img class="checkboard" src="images/checkboard.png" alt="checkboard-decoration">
+    <img class="speaker-img" src="${speakers[i].img}" alt="dog">
 
-  <div>
-    <h5 class="name">
-      ${speakers[i].name}
-    </h5>
+    <div>
+      <h5 class="name">
+        ${speakers[i].name}
+      </h5>
 
-    <p class="role">
-      ${speakers[i].role}
-      <hr>
-    </p>
+      <p class="role">
+        ${speakers[i].role}
+        <hr>
+      </p>
 
-    <p class="description">
-      ${speakers[i].description}
-    </p>
-  </div>
-  `;
-  gridContainer.appendChild(speakerContainer);
+      <p class="description">
+        ${speakers[i].description}
+      </p>
+    </div>
+    `;
+    gridContainer.appendChild(speakerContainer);
   }
 }
 
-createSpeakers()
+createSpeakers();
 const speakersArr = document.querySelectorAll('.speaker-container');
 
 moreButton.addEventListener('click', () => {
   speakersArr.forEach((speaker) => {
-      speaker.style.display = 'flex'
-  })
+    speaker.style.display = 'flex';
+  });
 });

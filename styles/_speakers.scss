@@ -101,15 +101,14 @@
     align-items: center;
     justify-content: center;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 3;
     column-gap: 15px;
     max-width: 1000px;
 
-  .speaker-container:nth-child(3),
-  .speaker-container:nth-child(4),
-  .speaker-container:nth-child(5),
-  .speaker-container:nth-child(6) {
-    display: flex;
-  }
+    .speaker-container:nth-child(3),
+    .speaker-container:nth-child(4),
+    .speaker-container:nth-child(5),
+    .speaker-container:nth-child(6) {
+      display: flex;
+    }
   }
 }
