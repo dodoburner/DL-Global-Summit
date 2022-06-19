@@ -240,7 +240,7 @@ header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -253,6 +253,7 @@ header nav {
   font-size: 14px;
   color: white;
   line-height: 24px;
+  max-width: 400px;
 }
 
 #programs-container .program-container div {
@@ -262,6 +263,7 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 80px;
 }
 
 #programs-container .program-container div i {
@@ -300,12 +302,17 @@ header nav {
     text-align: center;
     min-height: 225px;
     max-width: 200px;
+    gap: 20px;
+  }
+  #programs-container .program-container p {
+    max-width: none;
   }
   #programs-container .program-container div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: none;
   }
   #programs-container .program-container div i {
     margin-bottom: 8px;

@@ -44,7 +44,7 @@
   .program-container {
     background-color: #474b54;
     display: flex;
-    gap: 10px;
+    gap: 40px;
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
@@ -53,11 +53,13 @@
       font-size: 14px;
       color: white;
       line-height: 24px;
+      max-width: 400px;
     }
 
     div {
       display: flex;
       align-items: center;
+      max-width: 80px;
 
       i {
         font-size: 34px;
@@ -95,9 +97,15 @@
       text-align: center;
       min-height: 225px;
       max-width: 200px;
+      gap: 20px;
+
+      p {
+        max-width: none;
+      }
 
       div {
         flex-direction: column;
+        max-width: none;
 
         i {
           margin-bottom: 8px;
