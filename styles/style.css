@@ -380,8 +380,8 @@ header nav {
   height: 125px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
+  -o-object-position: center;
+     object-position: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -426,10 +426,10 @@ header nav {
   margin-left: 8px;
 }
 
-#speakers-section .speaker-container:nth-child(2),
 #speakers-section .speaker-container:nth-child(3),
 #speakers-section .speaker-container:nth-child(4),
-#speakers-section .speaker-container:nth-child(5) {
+#speakers-section .speaker-container:nth-child(5),
+#speakers-section .speaker-container:nth-child(6) {
   display: none;
 }
 
@@ -453,10 +453,10 @@ header nav {
     -webkit-column-gap: 15px;
             column-gap: 15px;
   }
-  #grid-container .speaker-container:nth-child(2),
   #grid-container .speaker-container:nth-child(3),
   #grid-container .speaker-container:nth-child(4),
-  #grid-container .speaker-container:nth-child(5) {
+  #grid-container .speaker-container:nth-child(5),
+  #grid-container .speaker-container:nth-child(6) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

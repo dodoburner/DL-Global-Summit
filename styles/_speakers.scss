@@ -38,7 +38,7 @@
       width: 125px;
       height: 125px;
       object-fit: cover;
-      object-position: bottom;
+      object-position: center;
       flex-shrink: 0;
     }
 
@@ -83,10 +83,10 @@
     }
   }
 
-  .speaker-container:nth-child(2),
   .speaker-container:nth-child(3),
   .speaker-container:nth-child(4),
-  .speaker-container:nth-child(5) {
+  .speaker-container:nth-child(5),
+  .speaker-container:nth-child(6) {
     display: none;
   }
 }
@@ -104,10 +104,10 @@
     grid-template-rows: 3;
     column-gap: 15px;
 
-  .speaker-container:nth-child(2),
   .speaker-container:nth-child(3),
   .speaker-container:nth-child(4),
-  .speaker-container:nth-child(5) {
+  .speaker-container:nth-child(5),
+  .speaker-container:nth-child(6) {
     display: flex;
   }
   }
