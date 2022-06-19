@@ -280,9 +280,6 @@ header nav {
   #program-section {
     padding: 5% 10% 8%;
   }
-  #program-section h3 {
-    font-size: 25px;
-  }
   #program-section button {
     background-color: inherit;
     border-bottom: 1px solid white;
@@ -347,10 +344,10 @@ header nav {
 }
 
 #speakers-section h3 hr {
-  width: 50px;
-  border-top: none;
-  border-width: 2px;
-  border-color: #ec5242;
+  width: 45px;
+  border: none;
+  height: 2px;
+  background-color: #ec5242;
 }
 
 #speakers-section .speaker-container {
@@ -395,7 +392,9 @@ header nav {
 
 #speakers-section .speaker-container hr {
   width: 30px;
-  border-color: #d3d3d3;
+  border: none;
+  height: 1px;
+  background-color: #d3d3d3;
   margin: 8px 0;
 }
 

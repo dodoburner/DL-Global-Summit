@@ -12,10 +12,10 @@
     margin-bottom: 50px;
 
     hr {
-      width: 50px;
-      border-top: none;
-      border-width: 2px;
-      border-color: $red;
+      width: 45px;
+      border: none;
+      height: 2px;
+      background-color: $red;
     }
   }
 
@@ -55,7 +55,9 @@
 
     hr {
       width: 30px;
-      border-color: $gray;
+      border: none;
+      height: 1px;
+      background-color: $gray;
       margin: 8px 0;
     }
 
