@@ -485,6 +485,10 @@ header nav {
   margin-bottom: 26px;
 }
 
+.about-headline .about-p2:nth-child(3) {
+  display: none;
+}
+
 .about-headline .about-p5 {
   font-size: 14px;
   font-weight: 600;
@@ -498,7 +502,7 @@ header nav {
   border-bottom: 1px solid;
 }
 
-.about-headline .about-p5 hr {
+.about-headline hr {
   display: none;
 }
 
@@ -507,13 +511,6 @@ header nav {
   max-width: 80%;
   margin-bottom: 20px;
   line-height: 30px;
-}
-
-.logo-description {
-  font-size: 15px;
-  max-width: 80%;
-  line-height: 22px;
-  margin-bottom: 40px;
 }
 
 .logo-section {
@@ -535,6 +532,20 @@ header nav {
   border-bottom: 1px solid #d3d3d3;
 }
 
+.logo-section .logo-description {
+  font-size: 15px;
+  max-width: 80%;
+  line-height: 22px;
+}
+
+.logo-section .logo-description:nth-child(2) {
+  display: none;
+}
+
+.logo-section hr {
+  display: none;
+}
+
 .logo-section .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -554,6 +565,7 @@ header nav {
       flex-direction: row;
   width: 100%;
   padding: 30px;
+  margin-top: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #d3d3d3;
@@ -689,13 +701,45 @@ header nav {
     max-width: 900px;
     margin-bottom: 50px;
   }
+  .about-headline .about-p2:nth-child(3) {
+    display: block;
+  }
   .about-headline hr {
+    display: initial;
     width: 30px;
-    height: 2px;
+    height: 1px;
     background-color: #ec5242;
     border: none;
     margin-top: 15px;
     margin-bottom: 30px;
+  }
+  .logo-section {
+    padding: 50px;
+  }
+  .logo-section .logo-description {
+    line-height: 24px;
+    max-width: 800px;
+  }
+  .logo-section .logo-description:nth-child(2) {
+    display: block;
+  }
+  .logo-section .about-h3 {
+    margin-bottom: 0;
+  }
+  .logo-section .about-h3 br {
+    display: none;
+  }
+  .logo-section hr {
+    display: initial;
+    width: 30px;
+    height: 1px;
+    background-color: #ec5242;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .logo-section .logo {
+    max-width: 500px;
   }
 }
 
