@@ -65,5 +65,15 @@ body {
       display: flex;
       gap: 35px;
     }
+
+    hr {
+      display: initial;
+      width: 30px;
+      height: 1px;
+      background-color: $red;
+      border: none;
+      margin-bottom: 15px;
+    }
+  
   }
 }

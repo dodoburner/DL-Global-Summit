@@ -10,12 +10,20 @@
 
   h3 {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 26px;
   }
 
+  hr {
+    width: 40px;
+    height: 1px;
+    background-color: $red;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  
   button {
     background-color: $red;
     color: white;
@@ -39,6 +47,7 @@
     gap: 10px;
     align-items: center;
     padding: 20px;
+    box-sizing: border-box;
 
     p {
       font-size: 14px;
@@ -67,11 +76,8 @@
 
 @media only screen and (min-width:768px) {
   #program-section {
-    padding: 5% 15% 8%;
+    padding: 5% 10% 8%;
 
-    h3 {
-      font-size: 25px;
-    }
     button {
       background-color: inherit;
       border-bottom: 1px solid white;
@@ -81,13 +87,14 @@
   }
 
   #programs-container {
-    grid-template-columns: repeat(5, 200px);
-    grid-template-rows: fit-content;
+    grid-template-columns: repeat(5, 1fr);
     column-gap: 4px;
 
     .program-container {
       flex-direction: column;
       text-align: center;
+      min-height: 225px;
+      max-width: 200px;
 
       div {
         flex-direction: column;

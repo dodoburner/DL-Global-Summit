@@ -22,6 +22,10 @@
     margin-bottom: 26px;
   }
 
+  .about-p2:nth-child(3) {
+    display: none;
+  }
+
   .about-p5 {
     font-size: 14px;
     font-weight: 600;
@@ -34,20 +38,16 @@
       border-bottom: 1px solid;
     }
   }
+
+  hr {
+    display: none;
+  }
 }
 
 .about-h3 {
   font-size: 22px;
   max-width: 80%;
-  margin-bottom: 20px;
   line-height: 30px;
-}
-
-.logo-description {
-  font-size: 15px;
-  max-width: 80%;
-  line-height: 22px;
-  margin-bottom: 40px;
 }
 
 .logo-section {
@@ -56,12 +56,33 @@
   padding: 30px 20px 50px;
   border-bottom: 1px solid $gray;
 
+  .logo-description {
+    font-size: 15px;
+    max-width: 80%;
+    line-height: 22px;
+  }
+
+  .logo-description:nth-child(4) {
+    display: none;
+  }
+
+  hr {
+    display: initial;
+    width: 30px;
+    height: 1px;
+    background-color: $red;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
   .logo {
     @include about-alignment();
 
     flex-direction: row;
     width: 100%;
     padding: 30px;
+    margin-top: 40px;
     box-sizing: border-box;
     border: 1px solid $gray;
     font-weight: 600;
@@ -87,31 +108,48 @@
 
   padding: 40px;
 
-  div {
-    @include about-alignment();
-
-    width: 100%;
-    height: 220px;
-    margin-bottom: 20px;
-    color: white;
-    background: url(/images/dogs1.jpeg) no-repeat;
-    background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(178, 24, 7, 0.7);
-
-    p {
-      font-size: 34px;
-      font-weight: 700;
-
-      span {
-        font-size: 15px;
-        font-weight: 400;
-      }
-    }
+  hr {
+    display: initial;
+    width: 30px;
+    height: 1px;
+    background-color: $red;
+    border: none;
+    margin-bottom: 15px;
   }
 
-  .event2 {
+  .events-container {
+    width: 100%;
+    margin-top: 40px;
+    div {
+      @include about-alignment();
+  
+      width: 100%;
+      height: 220px;
+      margin-bottom: 20px;
+      color: white;
+      background: url(/images/dogs1.jpeg) no-repeat;
+      background-size: cover;
+      box-shadow: inset 0 0 0 1000px rgba(178, 24, 7, 0.7);
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        box-shadow: inset 0 0 0 1000px rgba(178, 24, 7, 0.5);
+      }
+  
+      p {
+        font-size: 34px;
+        font-weight: 700;
+  
+        span {
+          font-size: 15px;
+          font-weight: 400;
+        }
+      }
+   }
+   .event2 {
     background: url(/images/dogs2.jpeg) no-repeat;
     background-size: cover;
+   }
   }
 }
 
@@ -121,6 +159,15 @@
   background-color: $black;
   color: white;
   padding: 30px 10px;
+
+  hr {
+    display: initial;
+    width: 30px;
+    height: 1px;
+    background-color: $red;
+    border: none;
+    margin-bottom: 15px;
+  }
 
   .sponsor-images {
     div {
@@ -135,5 +182,79 @@
     max-width: 100px;
     color: gray;
     filter: invert(70%) sepia(1%) saturate(4%) hue-rotate(16deg) brightness(91%) contrast(90%);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about-headline {
+    padding-bottom: 90px;
+    .about-p1 {
+      display: none;
+    }
+  
+    .about-h1 {
+      max-width: 800px;
+      line-height: 55px;
+      margin-bottom: 18px;
+      font-size: 54px;
+    }
+
+    br {
+      display: none;
+    }
+
+    .about-p2-container {
+      max-width: 900px;
+      margin-bottom: 50px;
+    }
+
+    .about-p2:nth-child(3) {
+      display: block;
+    }
+
+    hr {
+      display: initial;
+      width: 30px;
+      height: 1px;
+      background-color: $red;
+      border: none;
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .logo-section {
+    padding: 50px;
+
+    .logo-description {
+     line-height: 24px;
+     max-width: 800px;
+    }
+    .logo-description:nth-child(2) {
+      display: block;
+    }
+
+    .about-h3 {
+      br {
+        display: none;
+      }
+      margin-bottom: 0;
+    }
+
+    .logo {
+      max-width: 500px;
+    }
+  }
+
+  .past-section {
+    padding-top: 60px;
+    padding-bottom: 90px;
+    
+    .events-container {
+      margin-top: 60px;
+      display: flex;
+      gap: 20px;
+      max-width: 900px;
+    }
   }
 }
