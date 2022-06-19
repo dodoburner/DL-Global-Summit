@@ -47,7 +47,6 @@
 .about-h3 {
   font-size: 22px;
   max-width: 80%;
-  margin-bottom: 20px;
   line-height: 30px;
 }
 
@@ -63,12 +62,18 @@
     line-height: 22px;
   }
 
-  .logo-description:nth-child(2) {
+  .logo-description:nth-child(4) {
     display: none;
   }
 
   hr {
-    display: none
+    display: initial;
+    width: 30px;
+    height: 1px;
+    background-color: $red;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .logo {
@@ -103,31 +108,48 @@
 
   padding: 40px;
 
-  div {
-    @include about-alignment();
-
-    width: 100%;
-    height: 220px;
-    margin-bottom: 20px;
-    color: white;
-    background: url(/images/dogs1.jpeg) no-repeat;
-    background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(178, 24, 7, 0.7);
-
-    p {
-      font-size: 34px;
-      font-weight: 700;
-
-      span {
-        font-size: 15px;
-        font-weight: 400;
-      }
-    }
+  hr {
+    display: initial;
+    width: 30px;
+    height: 1px;
+    background-color: $red;
+    border: none;
+    margin-bottom: 15px;
   }
 
-  .event2 {
+  .events-container {
+    width: 100%;
+    margin-top: 40px;
+    div {
+      @include about-alignment();
+  
+      width: 100%;
+      height: 220px;
+      margin-bottom: 20px;
+      color: white;
+      background: url(/images/dogs1.jpeg) no-repeat;
+      background-size: cover;
+      box-shadow: inset 0 0 0 1000px rgba(178, 24, 7, 0.7);
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        box-shadow: inset 0 0 0 1000px rgba(178, 24, 7, 0.5);
+      }
+  
+      p {
+        font-size: 34px;
+        font-weight: 700;
+  
+        span {
+          font-size: 15px;
+          font-weight: 400;
+        }
+      }
+   }
+   .event2 {
     background: url(/images/dogs2.jpeg) no-repeat;
     background-size: cover;
+   }
   }
 }
 
@@ -137,6 +159,15 @@
   background-color: $black;
   color: white;
   padding: 30px 10px;
+
+  hr {
+    display: initial;
+    width: 30px;
+    height: 1px;
+    background-color: $red;
+    border: none;
+    margin-bottom: 15px;
+  }
 
   .sponsor-images {
     div {
@@ -166,6 +197,10 @@
       line-height: 55px;
       margin-bottom: 18px;
       font-size: 54px;
+    }
+
+    br {
+      display: none;
     }
 
     .about-p2-container {
@@ -206,18 +241,20 @@
       margin-bottom: 0;
     }
 
-    hr {
-      display: initial;
-      width: 30px;
-      height: 1px;
-      background-color: $red;
-      border: none;
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-
     .logo {
       max-width: 500px;
+    }
+  }
+
+  .past-section {
+    padding-top: 60px;
+    padding-bottom: 90px;
+    
+    .events-container {
+      margin-top: 60px;
+      display: flex;
+      gap: 20px;
+      max-width: 900px;
     }
   }
 }

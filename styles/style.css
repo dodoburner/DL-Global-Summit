@@ -509,7 +509,6 @@ header nav {
 .about-h3 {
   font-size: 22px;
   max-width: 80%;
-  margin-bottom: 20px;
   line-height: 30px;
 }
 
@@ -538,12 +537,18 @@ header nav {
   line-height: 22px;
 }
 
-.logo-section .logo-description:nth-child(2) {
+.logo-section .logo-description:nth-child(4) {
   display: none;
 }
 
 .logo-section hr {
-  display: none;
+  display: initial;
+  width: 30px;
+  height: 1px;
+  background-color: #ec5242;
+  border: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .logo-section .logo {
@@ -604,7 +609,21 @@ header nav {
   padding: 40px;
 }
 
-.past-section div {
+.past-section hr {
+  display: initial;
+  width: 30px;
+  height: 1px;
+  background-color: #ec5242;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.past-section .events-container {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.past-section .events-container div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -627,19 +646,27 @@ header nav {
   background-size: cover;
   -webkit-box-shadow: inset 0 0 0 1000px rgba(178, 24, 7, 0.7);
           box-shadow: inset 0 0 0 1000px rgba(178, 24, 7, 0.7);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.past-section div p {
+.past-section .events-container div:hover {
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(178, 24, 7, 0.5);
+          box-shadow: inset 0 0 0 1000px rgba(178, 24, 7, 0.5);
+}
+
+.past-section .events-container div p {
   font-size: 34px;
   font-weight: 700;
 }
 
-.past-section div p span {
+.past-section .events-container div p span {
   font-size: 15px;
   font-weight: 400;
 }
 
-.past-section .event2 {
+.past-section .events-container .event2 {
   background: url(/images/dogs2.jpeg) no-repeat;
   background-size: cover;
 }
@@ -662,6 +689,15 @@ header nav {
   background-color: #272a31;
   color: white;
   padding: 30px 10px;
+}
+
+.sponsor-section hr {
+  display: initial;
+  width: 30px;
+  height: 1px;
+  background-color: #ec5242;
+  border: none;
+  margin-bottom: 15px;
 }
 
 .sponsor-section .sponsor-images div {
@@ -697,6 +733,9 @@ header nav {
     margin-bottom: 18px;
     font-size: 54px;
   }
+  .about-headline br {
+    display: none;
+  }
   .about-headline .about-p2-container {
     max-width: 900px;
     margin-bottom: 50px;
@@ -729,17 +768,20 @@ header nav {
   .logo-section .about-h3 br {
     display: none;
   }
-  .logo-section hr {
-    display: initial;
-    width: 30px;
-    height: 1px;
-    background-color: #ec5242;
-    border: none;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
   .logo-section .logo {
     max-width: 500px;
+  }
+  .past-section {
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
+  .past-section .events-container {
+    margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    max-width: 900px;
   }
 }
 
@@ -804,6 +846,14 @@ body {
     display: -ms-flexbox;
     display: flex;
     gap: 35px;
+  }
+  .sponsor-section hr {
+    display: initial;
+    width: 30px;
+    height: 1px;
+    background-color: #ec5242;
+    border: none;
+    margin-bottom: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
