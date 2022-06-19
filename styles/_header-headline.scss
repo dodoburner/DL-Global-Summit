@@ -133,25 +133,34 @@ header {
         background-color: white;
         color: $red;
         flex-shrink: 0;
+        cursor: pointer;
       }
     }
   }
 
   .headline-section {
-    padding: 8% 15% 12%;
+    padding: 8% 15% 10%;
     .p1 {
-      font-size: 36px;
+      font-size: 42px;
     }
 
     h1 {
-      font-size: 52px;
+      font-size: 60px;
       font-weight: 400;
-      line-height: 48px;
-      max-width: 500px;
+      line-height: 55px;
+      max-width: 600px;
     }
 
     .p2-container {
       max-width: 500px;
+    }
+
+    .p3 {
+      font-size: 30px;
+    }
+
+    .p4 {
+      font-size: 20px;
     }
   }
 }
