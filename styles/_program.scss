@@ -10,12 +10,20 @@
 
   h3 {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 26px;
   }
 
+  hr {
+    width: 40px;
+    height: 1px;
+    background-color: $red;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  
   button {
     background-color: $red;
     color: white;

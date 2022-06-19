@@ -202,10 +202,18 @@ header nav {
 
 #program-section h3 {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 26px;
+}
+
+#program-section hr {
+  width: 40px;
+  height: 1px;
+  background-color: #ec5242;
+  border: none;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 #program-section button {
