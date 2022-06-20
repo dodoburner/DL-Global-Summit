@@ -13,6 +13,20 @@
 
 [Live Demo Link](https://dodoburner.github.io/DL-Global-Summit/)
 
+## Getting Started
+
+How to run this project locally:
+
+# Prerequisites
+- Have a Github account and Git installed on your PC.
+- Have a code editor installed like VS Code or Atom.
+
+# Install
+To install this project you have to clone it to your local environment from the project Github page. You can do this manually using the git clone command or you can install Github Desktop.
+
+# Deployment
+To deploy it and look at it live, while also being able to make changes that appear live on the page, install the Live Server extension on VS Code.
+
 ## Authors
 
 👤 **Author1**
